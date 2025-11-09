@@ -34,19 +34,10 @@ export const Navbar = () => {
 
     let newPath = currentPath;
 
-    // Gestionează rutele cu parametri dinamici pentru domeniile de practică
-    if (currentPath.startsWith("/domenii-de-practica/") && lang === "en") {
-      const id = currentPath.replace("/domenii-de-practica/", "");
-      newPath = `/legal-services/${id}`;
-    } else if (currentPath.startsWith("/legal-services/") && lang === "ro") {
-      const id = currentPath.replace("/legal-services/", "");
-      newPath = `/domenii-de-practica/${id}`;
-    } else {
-      // Caută echivalența între rutele RO ↔ EN
-      for (const [ro, en] of Object.entries(routesMap)) {
-        if (lang === "en" && currentPath === ro) newPath = en;
-        if (lang === "ro" && currentPath === en) newPath = ro;
-      }
+    // Caută echivalența între rutele RO ↔ EN
+    for (const [ro, en] of Object.entries(routesMap)) {
+      if (lang === "en" && currentPath === ro) newPath = en;
+      if (lang === "ro" && currentPath === en) newPath = ro;
     }
 
     // Actualizează limba în context și navighează la ruta echivalentă

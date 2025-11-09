@@ -20,7 +20,7 @@ import officeImage3 from "@/assets/office-4.jpg";
 import logo from "@/assets/logo.png";
 
 export default function About() {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
   const navigate = useNavigate();
 
   return (
@@ -199,7 +199,7 @@ export default function About() {
             ].map((area, idx) => (
               <div
                 key={idx}
-                onClick={() => navigate(`${language === 'ro' ? '/domenii-de-practica' : '/legal-services'}/${area.id}`)}
+                onClick={() => navigate(`/domenii-practica/${area.id}`)}
                 className="bg-white border border-gray-200 p-8 hover:shadow-lg hover:border-red-600 transition-all cursor-pointer flex flex-col h-full group"
               >
                 <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-red-600 group-hover:bg-red-700 transition-colors mb-6">
