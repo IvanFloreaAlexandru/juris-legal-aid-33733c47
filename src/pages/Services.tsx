@@ -12,8 +12,11 @@ import { useNavigate } from "react-router-dom";
 import officeImage3 from "@/assets/office-4.jpg";
 
 export default function DomeniiDePractica() {
-  const { t } = useLanguage();
+  const { language, t } = useLanguage();
   const navigate = useNavigate();
+
+  const basePath =
+    language === "ro" ? "/domenii-de-practica" : "/legal-services";
 
   const services = [
     {
@@ -23,7 +26,7 @@ export default function DomeniiDePractica() {
         "Contracte, litigii civile, executări silite, recuperări creanțe",
         "Contracts, civil litigation, forced executions, debt recovery"
       ),
-      path: "/domenii-de-practica/drept-civil",
+      path: `${basePath}/${language === "ro" ? "drept-civil" : "civil-law"}`,
     },
     {
       icon: Briefcase,
@@ -32,7 +35,9 @@ export default function DomeniiDePractica() {
         "Constituire societăți, fuziuni, achiziții, restructurări",
         "Company formation, mergers, acquisitions, restructuring"
       ),
-      path: "/domenii-de-practica/proprietate-intelectuala",
+      path: `${basePath}/${
+        language === "ro" ? "proprietate-intelectuala" : "intellectual-property"
+      }`,
     },
     {
       icon: Home,
@@ -41,7 +46,9 @@ export default function DomeniiDePractica() {
         "Tranzacții imobiliare, verificări juridice, asistență notarială",
         "Real estate transactions, legal checks, notarial assistance"
       ),
-      path: "/domenii-de-practica/drept-societar",
+      path: `${basePath}/${
+        language === "ro" ? "drept-societar" : "corporate-law"
+      }`,
     },
     {
       icon: Users,
@@ -50,7 +57,9 @@ export default function DomeniiDePractica() {
         "Divorț, partaj, custodie copii, pensie de întreținere",
         "Divorce, partition, child custody, alimony"
       ),
-      path: "/domenii-de-practica/restructurare-recuperare",
+      path: `${basePath}/${
+        language === "ro" ? "restructurare-recuperare" : "debt-recovery"
+      }`,
     },
     {
       icon: Gavel,
@@ -59,7 +68,7 @@ export default function DomeniiDePractica() {
         "Apărare în procese penale, reprezentare victimă, cauțiune",
         "Criminal defense, victim representation, bail"
       ),
-      path: "/domenii-de-practica/insolventa",
+      path: `${basePath}/${language === "ro" ? "insolventa" : "insolvency"}`,
     },
     {
       icon: Building,
@@ -71,7 +80,9 @@ export default function DomeniiDePractica() {
         "Contracte bancare, tranzacții financiare, asigurări",
         "Bank contracts, financial transactions, insurance"
       ),
-      path: "/domenii-de-practica/drept-financiar",
+      path: `${basePath}/${
+        language === "ro" ? "drept-financiar" : "banking-finance-law"
+      }`,
     },
     {
       icon: Building,
@@ -80,7 +91,9 @@ export default function DomeniiDePractica() {
         "Soluționarea disputelor prin arbitraj intern și internațional",
         "Resolution of disputes via domestic and international arbitration"
       ),
-      path: "/domenii-de-practica/arbitraj-executare",
+      path: `${basePath}/${
+        language === "ro" ? "arbitraj-executare" : "arbitration"
+      }`,
     },
     {
       icon: Building,
@@ -89,7 +102,11 @@ export default function DomeniiDePractica() {
         "Executarea obligațiilor prin proceduri legale",
         "Enforcement of obligations through legal procedures"
       ),
-      path: "/domenii-de-practica/proceduri-executare-silita",
+      path: `${basePath}/${
+        language === "ro"
+          ? "proceduri-executare-silita"
+          : "enforcement-procedures"
+      }`,
     },
     {
       icon: Building,
@@ -101,7 +118,9 @@ export default function DomeniiDePractica() {
         "Asistență în domeniul administrativ, fiscal și contencios",
         "Assistance in administrative, fiscal, and constitutional matters"
       ),
-      path: "/domenii-de-practica/drept-administrativ-fiscal",
+      path: `${basePath}/${
+        language === "ro" ? "drept-administrativ-fiscal" : "administrative-law"
+      }`,
     },
     {
       icon: Building,
@@ -110,7 +129,9 @@ export default function DomeniiDePractica() {
         "Achiziții publice și reglementări concurențiale",
         "Public acquisitions and competition regulations"
       ),
-      path: "/domenii-de-practica/drept-concurenta-ajutor",
+      path: `${basePath}/${
+        language === "ro" ? "drept-concurenta-ajutor" : "competition-law"
+      }`,
     },
     {
       icon: Building,
@@ -122,7 +143,7 @@ export default function DomeniiDePractica() {
         "Contracte de muncă, concedieri, discriminare, hărțuire",
         "Employment contracts, dismissals, discrimination, harassment"
       ),
-      path: "/domenii-de-practica/drept-munca",
+      path: `${basePath}/${language === "ro" ? "drept-munca" : "labor-law"}`,
     },
     {
       icon: Building,
@@ -131,7 +152,9 @@ export default function DomeniiDePractica() {
         "Asistență juridică în relația cu consumatorii",
         "Legal assistance in consumer relations"
       ),
-      path: "/domenii-de-practica/protectia-consumatorului",
+      path: `${basePath}/${
+        language === "ro" ? "protectia-consumatorului" : "consumer-protection"
+      }`,
     },
     {
       icon: Building,
@@ -140,7 +163,9 @@ export default function DomeniiDePractica() {
         "Reglementări și litigii în domeniul mediului",
         "Regulations and litigation in environmental law"
       ),
-      path: "/domenii-de-practica/drept-mediu",
+      path: `${basePath}/${
+        language === "ro" ? "drept-mediu" : "environmental-law"
+      }`,
     },
     {
       icon: Building,
@@ -149,7 +174,9 @@ export default function DomeniiDePractica() {
         "Asistență în litigii privind drepturile omului",
         "Assistance in human rights litigation"
       ),
-      path: "/domenii-de-practica/drepturile-omului-cedo",
+      path: `${basePath}/${
+        language === "ro" ? "drepturile-omului-cedo" : "human-rights"
+      }`,
     },
     {
       icon: Building,
@@ -158,7 +185,7 @@ export default function DomeniiDePractica() {
         "Apărare în procese penale, reprezentare victimă",
         "Criminal defense, victim representation"
       ),
-      path: "/domenii-de-practica/drept-penal",
+      path: `${basePath}/${language === "ro" ? "drept-penal" : "criminal-law"}`,
     },
     {
       icon: Building,
@@ -167,7 +194,9 @@ export default function DomeniiDePractica() {
         "Consultanță și litigii în achiziții publice",
         "Consulting and litigation in public procurement"
       ),
-      path: "/domenii-de-practica/achizitii-publice",
+      path: `${basePath}/${
+        language === "ro" ? "achizitii-publice" : "public-procurement"
+      }`,
     },
   ];
 

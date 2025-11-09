@@ -1135,7 +1135,28 @@ export default function PracticeAreaDetail() {
   const navigate = useNavigate();
   const { t } = useLanguage();
 
-  const practiceArea = id ? practiceAreas[id] : null;
+  // Mapping URL slug -> cheia internă
+  const slugs: Record<string, string> = {
+    "civil-law": "drept-civil",
+    "intellectual-property": "proprietate-intelectuala",
+    "corporate-law": "drept-societar",
+    "debt-recovery": "restructurare-recuperare",
+    insolvency: "insolventa",
+    "banking-finance-law": "drept-financiar",
+    arbitration: "arbitraj-executare",
+    "enforcement-procedures": "proceduri-executare-silita",
+    "administrative-law": "drept-administrativ-fiscal",
+    "competition-law": "drept-concurenta-ajutor",
+    "labor-law": "drept-munca",
+    "consumer-protection": "protectia-consumatorului",
+    "environmental-law": "drept-mediu",
+    "human-rights": "drepturile-omului-cedo",
+    "criminal-law": "drept-penal",
+    "public-procurement": "achizitii-publice",
+  };
+
+  const key = id ? slugs[id] : null;
+  const practiceArea = key ? practiceAreas[key] : null;
 
   if (!practiceArea) {
     return (
@@ -1170,7 +1191,6 @@ export default function PracticeAreaDetail() {
       {/* Content Section */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4 max-w-7xl">
-          {/* Introduction */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
               <p className="text-gray-700 leading-relaxed text-lg">
@@ -1187,16 +1207,14 @@ export default function PracticeAreaDetail() {
             </div>
           </div>
 
-          {/* Sections - layout pe 2 coloane */}
+          {/* Sections */}
           <div className="columns-1 md:columns-2 md:gap-x-12 space-y-12">
             {practiceArea.sections.map((section, idx) => (
               <div key={idx} className="flex gap-6 break-inside-avoid">
                 <div className="flex-shrink-0">
-                  {/* --- MODIFICAREA CULORII ESTE AICI --- */}
                   <div className="w-12 h-12 rounded-full border-2 border-red-600 flex items-center justify-center">
                     <section.icon className="h-6 w-6 text-red-600" />
                   </div>
-                  {/* --- SFÂRȘITUL MODIFICĂRII CULORII --- */}
                 </div>
                 <div className="flex-1">
                   <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-900 mb-3">

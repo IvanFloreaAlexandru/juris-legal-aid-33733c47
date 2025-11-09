@@ -15,43 +15,60 @@ import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import PracticeAreaDetail from "./pages/PracticeAreaDetail";
 import DomeniiDePractica from "./pages/Services";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <LanguageProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Navbar />
-          <Routes>
-            {/* Romanian routes */}
-            <Route path="/despre" element={<About />} />
-            <Route path="/avocati" element={<Lawyers />} />
-            <Route path="/domenii-de-practica" element={<DomeniiDePractica />} />
-            <Route path="/domenii-de-practica/:id" element={<PracticeAreaDetail />} />
-            <Route path="/noutati" element={<News />} />
-            
-            {/* English routes */}
-            <Route path="/about" element={<About />} />
-            <Route path="/legal-services" element={<Services />} />
-            <Route path="/legal-services/:id" element={<PracticeAreaDetail />} />
-            <Route path="/news" element={<News />} />
-            
-            {/* Common routes */}
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/login" element={<Login />} />
-            
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
-      </LanguageProvider>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  const { language } = useLanguage(); // ✅ acum ai acces la language
+
+  const queryClient = new QueryClient();
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <LanguageProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path="/despre" element={<About />} />
+              <Route path="/avocati" element={<Lawyers />} />
+
+              <Route
+                path={
+                  language === "ro" ? "/domenii-de-practica" : "/legal-services"
+                }
+                element={<DomeniiDePractica />}
+              />
+              <Route
+                path={
+                  language === "ro"
+                    ? "/domenii-de-practica/:id"
+                    : "/legal-services/:id"
+                }
+                element={<PracticeAreaDetail />}
+              />
+
+              <Route path="/noutati" element={<News />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/legal-services" element={<Services />} />
+              <Route
+                path="/legal-services/:id"
+                element={<PracticeAreaDetail />}
+              />
+              <Route path="/news" element={<News />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <Footer />
+          </BrowserRouter>
+        </LanguageProvider>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;
