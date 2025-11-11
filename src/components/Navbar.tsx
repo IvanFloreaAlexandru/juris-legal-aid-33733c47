@@ -9,6 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { SearchBar } from "@/components/SearchBar";
 import logoImage from "../assets/logo.png";
 
 export const Navbar = () => {
@@ -90,6 +91,11 @@ export const Navbar = () => {
                 {item.label}
               </Link>
             ))}
+          </div>
+
+          {/* Search Bar */}
+          <div className="hidden lg:block flex-1 max-w-md mx-4">
+            <SearchBar />
           </div>
 
           {/* Right Side - Language & Login */}

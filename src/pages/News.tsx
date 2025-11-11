@@ -1,10 +1,14 @@
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useArticles } from '@/contexts/ArticlesContext';
+import { Link } from 'react-router-dom';
 import { Calendar, User } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 
 export default function News() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  const { articles, loading } = useArticles();
 
   const newsArticles = [
     {
@@ -89,36 +93,45 @@ export default function News() {
       {/* News Grid */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {newsArticles.map((article, idx) => (
-              <Card key={idx} className="overflow-hidden hover:shadow-lg transition-shadow">
-                <img
-                  src={article.image}
-                  alt={article.title}
-                  className="w-full h-48 object-cover"
-                />
-                <CardHeader>
-                  <CardTitle className="font-serif">{article.title}</CardTitle>
-                  <CardDescription className="space-y-1">
-                    <div className="flex items-center gap-2 text-xs">
-                      <Calendar className="h-3 w-3" />
-                      <span>{article.date}</span>
-                    </div>
-                    <div className="flex items-center gap-2 text-xs">
-                      <User className="h-3 w-3" />
-                      <span>{article.author}</span>
-                    </div>
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground mb-4">{article.excerpt}</p>
-                  <Button variant="outline" size="sm">
-                    {t('Citește mai mult', 'Read More')}
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          {loading ? (
+            <div className="text-center py-16">Se încarcă...</div>
+          ) : articles.filter(a => a.status === 'published').length === 0 ? (
+            <div className="text-center py-16">
+              <p className="text-muted-foreground">Nu există articole publicate</p>
+            </div>
+          ) : (
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {articles.filter(a => a.status === 'published').map((article) => (
+                <Card key={article.id} className="overflow-hidden hover:shadow-lg transition-shadow">
+                  {article.coverImage && (
+                    <img src={article.coverImage} alt={article.title} className="w-full h-48 object-cover" />
+                  )}
+                  <CardHeader>
+                    <Badge className="mb-2 w-fit">{article.category}</Badge>
+                    <CardTitle className="font-serif">{article.title}</CardTitle>
+                    <CardDescription className="space-y-1">
+                      <div className="flex items-center gap-2 text-xs">
+                        <Calendar className="h-3 w-3" />
+                        <span>{new Date(article.publishedAt || article.createdAt).toLocaleDateString('ro-RO')}</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-xs">
+                        <User className="h-3 w-3" />
+                        <span>{article.author}</span>
+                      </div>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground mb-4 line-clamp-3">{article.excerpt}</p>
+                    <Button variant="outline" size="sm" asChild>
+                      <Link to={`${language === 'ro' ? '/noutati' : '/news'}/${article.slug}`}>
+                        {t('Citește mai mult', 'Read More')}
+                      </Link>
+                    </Button>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </div>
