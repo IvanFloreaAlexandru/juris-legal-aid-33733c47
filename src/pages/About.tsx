@@ -27,7 +27,7 @@ export default function About() {
     <div className="min-h-screen bg-white">
       {/* Hero Slider Section */}
       <section className="relative bg-white">
-        <div className="relative h-[400px] md:h-[500px] lg:h-[400px] overflow-hidden">
+        <div className="relative min-h-[30vh] md:min-h-[40vh] lg:min-h-[30vh] overflow-hidden">
           <div className="absolute inset-0">
             <img
               src={officeImage3}
@@ -35,7 +35,8 @@ export default function About() {
               className="w-full h-full object-cover brightness-75"
             />
           </div>
-          <div className="absolute inset-0 flex items-center justify-center">
+
+          <div className="absolute inset-0 h-full grid place-items-center">
             <div className="text-center text-white px-4">
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-light mb-4">
                 {t("Suport și asistență", "Support and Assistance")}
@@ -47,12 +48,6 @@ export default function About() {
                 )}
               </p>
             </div>
-          </div>
-          {/* Slider controls */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
-            <button className="w-3 h-3 rounded-full bg-red-600"></button>
-            <button className="w-3 h-3 rounded-full bg-white/50"></button>
-            <button className="w-3 h-3 rounded-full bg-white/50"></button>
           </div>
         </div>
       </section>

@@ -1,8 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Search, X } from 'lucide-react';
-import { Input } from '@/components/ui/input';
-import { useSearch } from '@/hooks/useSearch';
-import { Link } from 'react-router-dom';
+import React, { useState, useRef, useEffect } from "react";
+import { Search, X } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { useSearch } from "@/hooks/useSearch";
+import { Link } from "react-router-dom";
 
 export const SearchBar: React.FC = () => {
   const { query, setQuery, results, loading } = useSearch();
@@ -11,21 +11,28 @@ export const SearchBar: React.FC = () => {
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (searchRef.current && !searchRef.current.contains(event.target as Node)) {
+      if (
+        searchRef.current &&
+        !searchRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     };
 
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => document.removeEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const getTypeLabel = (type: string) => {
     switch (type) {
-      case 'article': return 'Articol';
-      case 'service': return 'Serviciu';
-      case 'lawyer': return 'Avocat';
-      default: return type;
+      case "article":
+        return "Articol";
+      case "service":
+        return "Serviciu";
+      case "lawyer":
+        return "Avocat";
+      default:
+        return type;
     }
   };
 
@@ -42,12 +49,12 @@ export const SearchBar: React.FC = () => {
             setIsOpen(true);
           }}
           onFocus={() => setIsOpen(true)}
-          className="pl-10 pr-10"
+          className="pl-10 pr-10 focus:outline-none focus:ring-2 focus:ring-red-900 focus:ring-offset-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-0"
         />
         {query && (
           <button
             onClick={() => {
-              setQuery('');
+              setQuery("");
               setIsOpen(false);
             }}
             className="absolute right-3 top-1/2 -translate-y-1/2"
@@ -79,7 +86,9 @@ export const SearchBar: React.FC = () => {
                   <div className="flex items-start gap-3">
                     <div className="flex-1">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="text-sm font-medium">{result.title}</span>
+                        <span className="text-sm font-medium">
+                          {result.title}
+                        </span>
                         <span className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary">
                           {getTypeLabel(result.type)}
                         </span>

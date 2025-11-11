@@ -45,9 +45,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Drept civil",
     titleEn: "Civil Law",
     description:
-      "Avocații de la Frunză-Asociații se bucură de o reputație remarcabilă în domeniul dreptului civil, construită printr-o experiență vastă în gestionarea unor cauze complexe și prin rezultate consecvente în favoarea clienților. Practica noastră se distinge prin rigoare juridică, profesionalism și o înțelegere profundă a raporturilor juridice civile, oferind soluții eficiente și personalizate pentru fiecare situație.",
+      "Avocații de la Frunză & Asociații se bucură de o reputație remarcabilă în domeniul dreptului civil, construită printr-o experiență vastă în gestionarea unor cauze complexe și prin rezultate consecvente în favoarea clienților. Practica noastră se distinge prin rigoare juridică, profesionalism și o înțelegere profundă a raporturilor juridice civile, oferind soluții eficiente și personalizate pentru fiecare situație.",
     descriptionEn:
-      "The attorneys at Frunză-Asociații enjoy a strong reputation in civil law, built on extensive experience in handling complex cases and achieving consistent results for clients. Our civil law practice is characterized by legal precision, professionalism, and a deep understanding of civil legal relationships, providing effective and tailored solutions for every situation.",
+      "The attorneys at Frunză & Asociații enjoy a strong reputation in civil law, built on extensive experience in handling complex cases and achieving consistent results for clients. Our civil law practice is characterized by legal precision, professionalism, and a deep understanding of civil legal relationships, providing effective and tailored solutions for every situation.",
 
     sections: [
       {
@@ -55,9 +55,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
         title: "IMOBILIAR, CADASTRU ȘI CARTE FUNCIARĂ",
         titleEn: "REAL ESTATE, CADASTRE AND LAND REGISTRY",
         content:
-          "Frunză-Asociații oferă asistență juridică completă în domeniul dreptului imobiliar, atât persoanelor fizice, cât și societăților comerciale, în proiecte complexe – clădiri de birouri, ansambluri rezidențiale, construcții industriale. Serviciile noastre includ efectuarea analizelor de tip due diligence, negocierea, redactarea și revizuirea documentației juridice, de urbanism, de cadastru și carte funciară, necesare finalizării tranzacțiilor imobiliare. De asemenea, asistăm clienții în încheierea și derularea contractelor de vânzare, antrepriză, închiriere, arendă, superficie, uzufruct și în litigii privind proprietatea sau restituirea bunurilor imobile.",
+          "Frunză & Asociații oferă asistență juridică completă în domeniul dreptului imobiliar, atât persoanelor fizice, cât și societăților comerciale, în proiecte complexe – clădiri de birouri, ansambluri rezidențiale, construcții industriale. Serviciile noastre includ efectuarea analizelor de tip due diligence, negocierea, redactarea și revizuirea documentației juridice, de urbanism, de cadastru și carte funciară, necesare finalizării tranzacțiilor imobiliare. De asemenea, asistăm clienții în încheierea și derularea contractelor de vânzare, antrepriză, închiriere, arendă, superficie, uzufruct și în litigii privind proprietatea sau restituirea bunurilor imobile.",
         contentEn:
-          "Frunză-Asociații provides comprehensive legal assistance in real estate law to both individuals and companies involved in complex projects such as office buildings, residential complexes, and industrial constructions. Our services include due diligence analyses, negotiation, drafting, and review of legal, urban planning, cadastral, and land registry documentation necessary for completing real estate transactions. We also assist clients in concluding and executing sale, construction, lease, tenancy, superficies, and usufruct contracts, as well as in litigation concerning ownership or property restitution.",
+          "Frunză & Asociații provides comprehensive legal assistance in real estate law to both individuals and companies involved in complex projects such as office buildings, residential complexes, and industrial constructions. Our services include due diligence analyses, negotiation, drafting, and review of legal, urban planning, cadastral, and land registry documentation necessary for completing real estate transactions. We also assist clients in concluding and executing sale, construction, lease, tenancy, superficies, and usufruct contracts, as well as in litigation concerning ownership or property restitution.",
       },
 
       {
@@ -65,9 +65,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
         title: "CONTRACTE CIVILE ȘI COMERCIALE",
         titleEn: "CIVIL AND COMMERCIAL CONTRACTS",
         content:
-          "Echipa Frunză-Asociații acordă consultanță juridică specializată în negocierea, redactarea și executarea contractelor civile și comerciale. Asistăm societăți, instituții financiare și autorități publice în toate etapele contractuale – de la structurare și redactare, până la interpretare și soluționarea litigiilor. Portofoliul nostru include contracte de vânzare, închiriere, împrumut, distribuție, mandat, antrepriză, gaj, leasing, comision, donație, sponsorizare, joint-venture, asigurare, agenție și publicitate.",
+          "Echipa Frunză & Asociații acordă consultanță juridică specializată în negocierea, redactarea și executarea contractelor civile și comerciale. Asistăm societăți, instituții financiare și autorități publice în toate etapele contractuale – de la structurare și redactare, până la interpretare și soluționarea litigiilor. Portofoliul nostru include contracte de vânzare, închiriere, împrumut, distribuție, mandat, antrepriză, gaj, leasing, comision, donație, sponsorizare, joint-venture, asigurare, agenție și publicitate.",
         contentEn:
-          "Frunză-Asociații provides specialized legal consulting in the negotiation, drafting, and execution of civil and commercial contracts. We assist companies, financial institutions, and public authorities in all contractual stages – from structuring and drafting to interpretation and dispute resolution. Our portfolio includes sale, lease, loan, distribution, mandate, construction, pledge, leasing, commission, donation, sponsorship, joint venture, insurance, agency, and advertising agreements.",
+          "Frunză & Asociații provides specialized legal consulting in the negotiation, drafting, and execution of civil and commercial contracts. We assist companies, financial institutions, and public authorities in all contractual stages – from structuring and drafting to interpretation and dispute resolution. Our portfolio includes sale, lease, loan, distribution, mandate, construction, pledge, leasing, commission, donation, sponsorship, joint venture, insurance, agency, and advertising agreements.",
       },
 
       {
@@ -75,9 +75,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
         title: "MOȘTENIRI ȘI PARTAJE",
         titleEn: "INHERITANCE AND PARTITION",
         content:
-          "Frunză-Asociații oferă consultanță și reprezentare juridică în proceduri notariale și judiciare privind succesiuni și partaje de bunuri. Asistăm clienții – persoane fizice sau juridice – în stabilirea drepturilor succesorale, redactarea actelor de partaj voluntar, soluționarea disputelor între moștenitori și valorificarea drepturilor asupra bunurilor moștenite.",
+          "Frunză & Asociații oferă consultanță și reprezentare juridică în proceduri notariale și judiciare privind succesiuni și partaje de bunuri. Asistăm clienții – persoane fizice sau juridice – în stabilirea drepturilor succesorale, redactarea actelor de partaj voluntar, soluționarea disputelor între moștenitori și valorificarea drepturilor asupra bunurilor moștenite.",
         contentEn:
-          "Frunză-Asociații provides legal consulting and representation in notarial and judicial procedures concerning inheritance and asset partition. We assist clients – individuals and legal entities – in establishing inheritance rights, drafting voluntary partition agreements, resolving disputes among heirs, and enforcing property rights over inherited assets.",
+          "Frunză & Asociații provides legal consulting and representation in notarial and judicial procedures concerning inheritance and asset partition. We assist clients – individuals and legal entities – in establishing inheritance rights, drafting voluntary partition agreements, resolving disputes among heirs, and enforcing property rights over inherited assets.",
       },
 
       {
@@ -85,9 +85,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
         title: "RĂSPUNDERE CIVILĂ DELICTUALĂ ȘI CONTRACTUALĂ",
         titleEn: "CIVIL AND CONTRACTUAL LIABILITY",
         content:
-          "Avocații Frunză-Asociații asigură asistență și reprezentare în cauze privind răspunderea civilă delictuală și contractuală, rezultate din fapte ilicite sau din neexecutarea obligațiilor contractuale. Practica noastră acoperă situații precum malpraxis, accidente rutiere sau de muncă, fapte penale și alte cauze generatoare de prejudicii, urmărind obținerea despăgubirilor corespunzătoare pentru clienți.",
+          "Avocații Frunză & Asociații asigură asistență și reprezentare în cauze privind răspunderea civilă delictuală și contractuală, rezultate din fapte ilicite sau din neexecutarea obligațiilor contractuale. Practica noastră acoperă situații precum malpraxis, accidente rutiere sau de muncă, fapte penale și alte cauze generatoare de prejudicii, urmărind obținerea despăgubirilor corespunzătoare pentru clienți.",
         contentEn:
-          "The attorneys at Frunză-Asociații provide assistance and representation in matters concerning civil and contractual liability arising from unlawful acts or breaches of contractual obligations. Our practice covers cases such as malpractice, traffic or workplace accidents, criminal acts, and other damage-causing events, aiming to obtain fair compensation for our clients.",
+          "The attorneys at Frunză & Asociații provide assistance and representation in matters concerning civil and contractual liability arising from unlawful acts or breaches of contractual obligations. Our practice covers cases such as malpractice, traffic or workplace accidents, criminal acts, and other damage-causing events, aiming to obtain fair compensation for our clients.",
       },
 
       {
@@ -95,9 +95,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
         title: "GARANȚII ȘI EXECUTARE SILITĂ",
         titleEn: "GUARANTEES AND ENFORCEMENT",
         content:
-          "Frunză-Asociații oferă asistență juridică în constituirea și publicitatea garanțiilor reale și personale, precum și în procedurile de executare a acestora. Oferim suport în redactarea și înregistrarea documentației specifice, îndeplinirea formalităților legale, precum și în procedurile de recuperare a creanțelor și contestare a executării silite.",
+          "Frunză & Asociații oferă asistență juridică în constituirea și publicitatea garanțiilor reale și personale, precum și în procedurile de executare a acestora. Oferim suport în redactarea și înregistrarea documentației specifice, îndeplinirea formalităților legale, precum și în procedurile de recuperare a creanțelor și contestare a executării silite.",
         contentEn:
-          "Frunză-Asociații provides legal assistance in establishing and publicizing personal and real guarantees, as well as in their enforcement procedures. We offer support in drafting and registering the necessary documentation, fulfilling legal formalities, and conducting debt recovery or enforcement challenge proceedings.",
+          "Frunză & Asociații provides legal assistance in establishing and publicizing personal and real guarantees, as well as in their enforcement procedures. We offer support in drafting and registering the necessary documentation, fulfilling legal formalities, and conducting debt recovery or enforcement challenge proceedings.",
       },
 
       {
@@ -105,9 +105,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
         title: "DREPTUL FAMILIEI",
         titleEn: "FAMILY LAW",
         content:
-          "Frunză-Asociații dispune de o experiență semnificativă în soluționarea cauzelor privind relațiile de familie, oferind asistență juridică în proceduri judiciare și de mediere. Practica noastră include divorțuri, stabilirea autorității părintești, partajul bunurilor comune, filiație, adopții și cazuri internaționale de răpire de minori.",
+          "Frunză & Asociații dispune de o experiență semnificativă în soluționarea cauzelor privind relațiile de familie, oferind asistență juridică în proceduri judiciare și de mediere. Practica noastră include divorțuri, stabilirea autorității părintești, partajul bunurilor comune, filiație, adopții și cazuri internaționale de răpire de minori.",
         contentEn:
-          "Frunză-Asociații has extensive experience in resolving family law matters, providing legal assistance in judicial and mediation procedures. Our practice includes divorce, determination of parental authority, division of common assets, filiation, adoption, and international child abduction cases.",
+          "Frunză & Asociații has extensive experience in resolving family law matters, providing legal assistance in judicial and mediation procedures. Our practice includes divorce, determination of parental authority, division of common assets, filiation, adoption, and international child abduction cases.",
       },
 
       {
@@ -115,9 +115,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
         title: "DREPT INTERNAȚIONAL PRIVAT",
         titleEn: "PRIVATE INTERNATIONAL LAW",
         content:
-          "Avocații Frunză-Asociații, specializați în drept internațional privat, asistă clienții în cauze cu elemente de extraneitate, inclusiv în determinarea instanței competente și a legii aplicabile, precum și în procedurile de recunoaștere și executare a hotărârilor judecătorești sau arbitrale străine, în România și în spațiul Uniunii Europene.",
+          "Avocații Frunză & Asociații, specializați în drept internațional privat, asistă clienții în cauze cu elemente de extraneitate, inclusiv în determinarea instanței competente și a legii aplicabile, precum și în procedurile de recunoaștere și executare a hotărârilor judecătorești sau arbitrale străine, în România și în spațiul Uniunii Europene.",
         contentEn:
-          "Frunză-Asociații attorneys, specialized in private international law, assist clients in cases involving cross-border elements, including determining the competent court and applicable law, as well as in recognition and enforcement procedures for foreign judicial or arbitral decisions in Romania and within the European Union.",
+          "Frunză & Asociații attorneys, specialized in private international law, assist clients in cases involving cross-border elements, including determining the competent court and applicable law, as well as in recognition and enforcement procedures for foreign judicial or arbitral decisions in Romania and within the European Union.",
       },
     ],
   },
@@ -372,9 +372,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Dreptul proprietății intelectuale",
     titleEn: "Intellectual Property Law",
     description:
-      "Frunză-Asociații protejează și valorifică drepturile de proprietate intelectuală ale clienților săi, oferind servicii juridice complete privind înregistrarea, apărarea și exploatarea acestora, atât pe plan național, cât și internațional. Expertiza noastră acoperă întregul spectru al drepturilor de autor, mărcilor, brevetelor, desenelor industriale și secretelor comerciale.",
+      "Frunză & Asociații protejează și valorifică drepturile de proprietate intelectuală ale clienților săi, oferind servicii juridice complete privind înregistrarea, apărarea și exploatarea acestora, atât pe plan național, cât și internațional. Expertiza noastră acoperă întregul spectru al drepturilor de autor, mărcilor, brevetelor, desenelor industriale și secretelor comerciale.",
     descriptionEn:
-      "Frunză-Asociații protects and enforces clients’ intellectual property rights, offering comprehensive legal services for their registration, defense, and exploitation, both nationally and internationally. Our expertise covers the full spectrum of copyright, trademarks, patents, industrial designs, and trade secrets.",
+      "Frunză & Asociații protects and enforces clients’ intellectual property rights, offering comprehensive legal services for their registration, defense, and exploitation, both nationally and internationally. Our expertise covers the full spectrum of copyright, trademarks, patents, industrial designs, and trade secrets.",
 
     sections: [
       {
@@ -382,9 +382,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
         title: "MĂRCI, BREVETE ȘI DESENE INDUSTRIALE",
         titleEn: "TRADEMARKS, PATENTS AND INDUSTRIAL DESIGNS",
         content:
-          "Echipa Frunză-Asociații oferă asistență completă în procedurile de înregistrare, opoziție, reînnoire și apărare a mărcilor, brevetelor de invenție și desenelor industriale, atât în fața Oficiului de Stat pentru Invenții și Mărci (OSIM), cât și în fața Oficiului Uniunii Europene pentru Proprietate Intelectuală (EUIPO) și a Organizației Mondiale a Proprietății Intelectuale (OMPI). De asemenea, oferim consiliere strategică privind administrarea portofoliilor de drepturi IP și prevenirea conflictelor de marcă.",
+          "Echipa Frunză & Asociații oferă asistență completă în procedurile de înregistrare, opoziție, reînnoire și apărare a mărcilor, brevetelor de invenție și desenelor industriale, atât în fața Oficiului de Stat pentru Invenții și Mărci (OSIM), cât și în fața Oficiului Uniunii Europene pentru Proprietate Intelectuală (EUIPO) și a Organizației Mondiale a Proprietății Intelectuale (OMPI). De asemenea, oferim consiliere strategică privind administrarea portofoliilor de drepturi IP și prevenirea conflictelor de marcă.",
         contentEn:
-          "The Frunză-Asociații team provides comprehensive assistance in the registration, opposition, renewal, and defense of trademarks, patents, and industrial designs before the Romanian State Office for Inventions and Trademarks (OSIM), the European Union Intellectual Property Office (EUIPO), and the World Intellectual Property Organization (WIPO). We also offer strategic advice on managing IP portfolios and preventing trademark conflicts.",
+          "The Frunză & Asociații team provides comprehensive assistance in the registration, opposition, renewal, and defense of trademarks, patents, and industrial designs before the Romanian State Office for Inventions and Trademarks (OSIM), the European Union Intellectual Property Office (EUIPO), and the World Intellectual Property Organization (WIPO). We also offer strategic advice on managing IP portfolios and preventing trademark conflicts.",
       },
 
       {
@@ -402,9 +402,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
         title: "LITIGII DE PROPRIETATE INTELECTUALĂ",
         titleEn: "INTELLECTUAL PROPERTY LITIGATION",
         content:
-          "Avocații Frunză-Asociații reprezintă clienții în litigii complexe de proprietate intelectuală, incluzând acțiuni de contrafacere, concurență neloială, încălcare de marcă, brevet sau drepturi de autor. Elaborăm strategii de protecție și apărare adaptate fiecărei situații, urmărind obținerea unor soluții rapide și eficiente, inclusiv măsuri provizorii, confiscarea produselor contrafăcute și despăgubiri pentru prejudiciile suferite.",
+          "Avocații Frunză & Asociații reprezintă clienții în litigii complexe de proprietate intelectuală, incluzând acțiuni de contrafacere, concurență neloială, încălcare de marcă, brevet sau drepturi de autor. Elaborăm strategii de protecție și apărare adaptate fiecărei situații, urmărind obținerea unor soluții rapide și eficiente, inclusiv măsuri provizorii, confiscarea produselor contrafăcute și despăgubiri pentru prejudiciile suferite.",
         contentEn:
-          "Frunză-Asociații attorneys represent clients in complex intellectual property disputes, including counterfeiting, unfair competition, trademark, patent, and copyright infringement actions. We develop tailored protection and defense strategies, aiming to secure swift and effective remedies such as provisional measures, seizure of counterfeit goods, and compensation for damages.",
+          "Frunză & Asociații attorneys represent clients in complex intellectual property disputes, including counterfeiting, unfair competition, trademark, patent, and copyright infringement actions. We develop tailored protection and defense strategies, aiming to secure swift and effective remedies such as provisional measures, seizure of counterfeit goods, and compensation for damages.",
       },
 
       {
@@ -423,9 +423,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Drept societar",
     titleEn: "Corporate Law",
     description:
-      "Frunză-Asociații oferă servicii juridice integrate pentru societăți comerciale, acoperind toate aspectele legale ale constituirii, funcționării, reorganizării și lichidării companiilor. Expertiza noastră vizează prevenirea riscurilor juridice și optimizarea structurii corporative pentru atingerea obiectivelor de afaceri ale clienților.",
+      "Frunză & Asociații oferă servicii juridice integrate pentru societăți comerciale, acoperind toate aspectele legale ale constituirii, funcționării, reorganizării și lichidării companiilor. Expertiza noastră vizează prevenirea riscurilor juridice și optimizarea structurii corporative pentru atingerea obiectivelor de afaceri ale clienților.",
     descriptionEn:
-      "Frunză-Asociații provides comprehensive legal services for commercial companies, covering all legal aspects of company formation, operation, restructuring, and liquidation. Our expertise focuses on mitigating legal risks and optimizing corporate structures to achieve clients’ business objectives.",
+      "Frunză & Asociații provides comprehensive legal services for commercial companies, covering all legal aspects of company formation, operation, restructuring, and liquidation. Our expertise focuses on mitigating legal risks and optimizing corporate structures to achieve clients’ business objectives.",
 
     sections: [
       {
@@ -471,9 +471,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Restructurare și recuperare creanțe",
     titleEn: "Debt Restructuring & Recovery",
     description:
-      "Frunză-Asociații oferă asistență juridică specializată în restructurarea datoriilor și recuperarea creanțelor comerciale și financiare, protejând interesele clienților prin strategii eficiente și soluții adaptate contextului fiecărei afaceri.",
+      "Frunză & Asociații oferă asistență juridică specializată în restructurarea datoriilor și recuperarea creanțelor comerciale și financiare, protejând interesele clienților prin strategii eficiente și soluții adaptate contextului fiecărei afaceri.",
     descriptionEn:
-      "Frunză-Asociații provides specialized legal assistance in debt restructuring and commercial and financial debt recovery, protecting clients’ interests through efficient strategies and tailored solutions for each business context.",
+      "Frunză & Asociații provides specialized legal assistance in debt restructuring and commercial and financial debt recovery, protecting clients’ interests through efficient strategies and tailored solutions for each business context.",
 
     sections: [
       {
@@ -519,9 +519,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Insolvență",
     titleEn: "Insolvency",
     description:
-      "Frunză-Asociații oferă asistență juridică completă în toate etapele procedurilor de insolvență, protejând interesele companiilor și ale creditorilor, prin strategii eficiente de redresare și recuperare a creanțelor.",
+      "Frunză & Asociații oferă asistență juridică completă în toate etapele procedurilor de insolvență, protejând interesele companiilor și ale creditorilor, prin strategii eficiente de redresare și recuperare a creanțelor.",
     descriptionEn:
-      "Frunză-Asociații provides comprehensive legal assistance at all stages of insolvency proceedings, protecting the interests of companies and creditors through effective recovery and restructuring strategies.",
+      "Frunză & Asociații provides comprehensive legal assistance at all stages of insolvency proceedings, protecting the interests of companies and creditors through effective recovery and restructuring strategies.",
 
     sections: [
       {
@@ -568,9 +568,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Arbitraj intern și internațional, Proceduri de executare silită",
     titleEn: "Domestic and International Arbitration, Enforcement Procedures",
     description:
-      "Frunză-Asociații oferă consultanță și reprezentare juridică specializată în arbitraj comercial și proceduri de executare silită, protejând drepturile și interesele clienților în litigii complexe și tranzacții comerciale. Echipa noastră asigură asistență în toate etapele procesului arbitral și al executării silite, elaborând strategii eficiente pentru soluționarea rapidă și sigură a litigiilor.",
+      "Frunză & Asociații oferă consultanță și reprezentare juridică specializată în arbitraj comercial și proceduri de executare silită, protejând drepturile și interesele clienților în litigii complexe și tranzacții comerciale. Echipa noastră asigură asistență în toate etapele procesului arbitral și al executării silite, elaborând strategii eficiente pentru soluționarea rapidă și sigură a litigiilor.",
     descriptionEn:
-      "Frunză-Asociații provides specialized legal advisory and representation in commercial arbitration and enforcement procedures, safeguarding clients’ rights and interests in complex disputes and commercial transactions. Our team provides support at all stages of arbitration and enforcement, developing effective strategies for timely and secure dispute resolution.",
+      "Frunză & Asociații provides specialized legal advisory and representation in commercial arbitration and enforcement procedures, safeguarding clients’ rights and interests in complex disputes and commercial transactions. Our team provides support at all stages of arbitration and enforcement, developing effective strategies for timely and secure dispute resolution.",
 
     sections: [
       {
@@ -643,9 +643,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Drept bancar, asigurări, piața de capital și finanțare",
     titleEn: "Banking, Insurance, Capital Markets & Finance",
     description:
-      "Frunză-Asociații oferă consultanță juridică specializată în domeniul financiar, asistând clienți în domeniul bancar, al asigurărilor, pieței de capital și al finanțării afacerilor, prin strategii adaptate și respectarea strictă a cadrului legal.",
+      "Frunză & Asociații oferă consultanță juridică specializată în domeniul financiar, asistând clienți în domeniul bancar, al asigurărilor, pieței de capital și al finanțării afacerilor, prin strategii adaptate și respectarea strictă a cadrului legal.",
     descriptionEn:
-      "Frunză-Asociații provides specialized legal advisory services in the financial sector, assisting clients in banking, insurance, capital markets, and business financing with tailored strategies and strict compliance with legal frameworks.",
+      "Frunză & Asociații provides specialized legal advisory services in the financial sector, assisting clients in banking, insurance, capital markets, and business financing with tailored strategies and strict compliance with legal frameworks.",
 
     sections: [
       {
@@ -691,9 +691,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Drept administrativ, fiscal și contencios constituțional",
     titleEn: "Administrative, Fiscal and Constitutional Litigation",
     description:
-      "Frunză-Asociații oferă consultanță și reprezentare juridică specializată în domeniul dreptului administrativ, fiscal și contencios constituțional. Asigurăm protecția intereselor clienților în relația cu autoritățile publice, optimizarea obligațiilor fiscale și respectarea drepturilor fundamentale în fața instanțelor și autorităților competente.",
+      "Frunză & Asociații oferă consultanță și reprezentare juridică specializată în domeniul dreptului administrativ, fiscal și contencios constituțional. Asigurăm protecția intereselor clienților în relația cu autoritățile publice, optimizarea obligațiilor fiscale și respectarea drepturilor fundamentale în fața instanțelor și autorităților competente.",
     descriptionEn:
-      "Frunză-Asociații provides specialized legal advisory and representation in administrative, fiscal, and constitutional litigation matters. We safeguard clients’ interests in dealings with public authorities, optimize fiscal obligations, and ensure protection of fundamental rights before courts and competent authorities.",
+      "Frunză & Asociații provides specialized legal advisory and representation in administrative, fiscal, and constitutional litigation matters. We safeguard clients’ interests in dealings with public authorities, optimize fiscal obligations, and ensure protection of fundamental rights before courts and competent authorities.",
 
     sections: [
       {
@@ -758,9 +758,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Dreptul concurenței și ajutor de stat",
     titleEn: "Competition Law and State Aid",
     description:
-      "Frunză-Asociații oferă consultanță și reprezentare specializată în domeniul dreptului concurenței și al ajutorului de stat, asistând clienții în prevenirea practicilor anticoncurențiale, conformitatea cu legislația europeană și națională și soluționarea disputelor cu autoritățile de reglementare.",
+      "Frunză & Asociații oferă consultanță și reprezentare specializată în domeniul dreptului concurenței și al ajutorului de stat, asistând clienții în prevenirea practicilor anticoncurențiale, conformitatea cu legislația europeană și națională și soluționarea disputelor cu autoritățile de reglementare.",
     descriptionEn:
-      "Frunză-Asociații provides specialized advice and representation in competition law and state aid, assisting clients in preventing anti-competitive practices, ensuring compliance with EU and national legislation, and resolving disputes with regulatory authorities.",
+      "Frunză & Asociații provides specialized advice and representation in competition law and state aid, assisting clients in preventing anti-competitive practices, ensuring compliance with EU and national legislation, and resolving disputes with regulatory authorities.",
 
     sections: [
       {
@@ -824,9 +824,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Dreptul muncii și al securității sociale",
     titleEn: "Labor and Social Security Law",
     description:
-      "Frunză-Asociații oferă consultanță și reprezentare juridică specializată în domeniul dreptului muncii și al securității sociale, protejând interesele angajatorilor și ale angajaților în toate etapele relațiilor de muncă și în fața autorităților competente.",
+      "Frunză & Asociații oferă consultanță și reprezentare juridică specializată în domeniul dreptului muncii și al securității sociale, protejând interesele angajatorilor și ale angajaților în toate etapele relațiilor de muncă și în fața autorităților competente.",
     descriptionEn:
-      "Frunză-Asociații provides specialized legal advice and representation in labor and social security law, protecting the interests of employers and employees at all stages of employment relations and before competent authorities.",
+      "Frunză & Asociații provides specialized legal advice and representation in labor and social security law, protecting the interests of employers and employees at all stages of employment relations and before competent authorities.",
 
     sections: [
       {
@@ -882,9 +882,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Protecția consumatorului",
     titleEn: "Consumer Protection",
     description:
-      "Frunză-Asociații oferă consultanță și reprezentare juridică specializată în protecția drepturilor consumatorilor, asigurând respectarea legislației și soluționarea eficientă a litigiilor cu comercianții sau prestatorii de servicii.",
+      "Frunză & Asociații oferă consultanță și reprezentare juridică specializată în protecția drepturilor consumatorilor, asigurând respectarea legislației și soluționarea eficientă a litigiilor cu comercianții sau prestatorii de servicii.",
     descriptionEn:
-      "Frunză-Asociații provides specialized legal advice and representation in consumer protection, ensuring compliance with applicable law and efficient resolution of disputes with merchants or service providers.",
+      "Frunză & Asociații provides specialized legal advice and representation in consumer protection, ensuring compliance with applicable law and efficient resolution of disputes with merchants or service providers.",
 
     sections: [
       {
@@ -1054,9 +1054,9 @@ const practiceAreas: Record<string, PracticeAreaData> = {
     title: "Achiziții publice",
     titleEn: "Public Procurement",
     description:
-      "Frunză-Asociații oferă consultanță și reprezentare specializată în domeniul achizițiilor publice, asistând clienții în toate etapele procedurilor, asigurând respectarea legislației și protecția drepturilor și intereselor acestora.",
+      "Frunză & Asociații oferă consultanță și reprezentare specializată în domeniul achizițiilor publice, asistând clienții în toate etapele procedurilor, asigurând respectarea legislației și protecția drepturilor și intereselor acestora.",
     descriptionEn:
-      "Frunză-Asociații provides specialized advice and representation in public procurement, assisting clients at all stages of the process, ensuring legal compliance and protection of their rights and interests.",
+      "Frunză & Asociații provides specialized advice and representation in public procurement, assisting clients at all stages of the process, ensuring legal compliance and protection of their rights and interests.",
 
     sections: [
       {
@@ -1157,7 +1157,7 @@ export default function PracticeAreaDetail() {
     // Romanian slugs (direct mapping)
     "drept-civil": "drept-civil",
     "drept-comercial": "drept-comercial",
-    "litigii": "litigii",
+    litigii: "litigii",
     "drept-penal": "drept-penal",
     "drept-administrativ": "drept-administrativ",
     "proprietate-intelectuala": "proprietate-intelectuala",
@@ -1208,8 +1208,8 @@ export default function PracticeAreaDetail() {
             <div>
               <p className="text-gray-700 leading-relaxed text-lg">
                 {t(
-                  "Frunză-Asociații oferă servicii complete de consultanță juridică și asistență în reprezentarea clienților, atât pentru companii românești și internaționale active în diverse sectoare economice, cât și pentru persoane fizice.",
-                  "Frunză-Asociații offers consulting services and provides legal assistance and representation to both national or multinational companies active in various economic sectors, as well as individuals."
+                  "Frunză & Asociații oferă servicii complete de consultanță juridică și asistență în reprezentarea clienților, atât pentru companii românești și internaționale active în diverse sectoare economice, cât și pentru persoane fizice.",
+                  "Frunză & Asociații offers consulting services and provides legal assistance and representation to both national or multinational companies active in various economic sectors, as well as individuals."
                 )}
               </p>
             </div>
