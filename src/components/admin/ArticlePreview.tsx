@@ -28,8 +28,8 @@ export const ArticlePreview: React.FC<ArticlePreviewProps> = ({
     .filter(Boolean);
 
   return (
-    <Card className="p-6 h-full overflow-y-auto">
-      <div className="max-w-4xl mx-auto">
+    <Card className="p-6 max-h-[80vh] overflow-y-auto bg-background">
+      <div className="max-w-full">
         {coverImage && (
           <img
             src={coverImage}

@@ -115,7 +115,7 @@ export const ArticleForm: React.FC<ArticleFormProps> = ({
 
   return (
     <div className="space-y-6">
-      <div className="flex gap-3 justify-between items-center mb-4">
+      <div className="flex gap-3 justify-between items-center mb-4 lg:hidden">
         <Button
           variant="outline"
           onClick={() => setShowPreview(!showPreview)}
@@ -135,14 +135,15 @@ export const ArticleForm: React.FC<ArticleFormProps> = ({
         </Button>
       </div>
 
-      <Tabs defaultValue="edit" className="w-full">
-        <TabsList className="grid w-full grid-cols-2 lg:hidden mb-4">
-          <TabsTrigger value="edit">Editare</TabsTrigger>
-          <TabsTrigger value="preview">Preview</TabsTrigger>
-        </TabsList>
+      {/* Mobile view with tabs */}
+      <div className="lg:hidden">
+        <Tabs defaultValue="edit" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 mb-4">
+            <TabsTrigger value="edit">Editare</TabsTrigger>
+            <TabsTrigger value="preview">Preview</TabsTrigger>
+          </TabsList>
 
-        <div className={showPreview ? "grid lg:grid-cols-2 gap-6" : ""}>
-          <TabsContent value="edit" className="mt-0 lg:block">
+          <TabsContent value="edit">
             <div className="space-y-4">
               <div>
                 <Label htmlFor="title">Titlu *</Label>
@@ -190,9 +191,9 @@ export const ArticleForm: React.FC<ArticleFormProps> = ({
               </div>
 
               <div>
-                <Label htmlFor="tags">Tag-uri</Label>
+                <Label htmlFor="tags-mobile">Tag-uri</Label>
                 <Input
-                  id="tags"
+                  id="tags-mobile"
                   value={formData.tags}
                   onChange={(e) =>
                     setFormData({ ...formData, tags: e.target.value })
@@ -202,9 +203,9 @@ export const ArticleForm: React.FC<ArticleFormProps> = ({
               </div>
 
               <div>
-                <Label htmlFor="excerpt">Extras</Label>
+                <Label htmlFor="excerpt-mobile">Extras</Label>
                 <Textarea
-                  id="excerpt"
+                  id="excerpt-mobile"
                   value={formData.excerpt}
                   onChange={(e) =>
                     setFormData({ ...formData, excerpt: e.target.value })
@@ -214,9 +215,9 @@ export const ArticleForm: React.FC<ArticleFormProps> = ({
               </div>
 
               <div>
-                <Label htmlFor="coverImage">Imagine copertă (URL)</Label>
+                <Label htmlFor="coverImage-mobile">Imagine copertă (URL)</Label>
                 <Input
-                  id="coverImage"
+                  id="coverImage-mobile"
                   value={formData.coverImage}
                   onChange={(e) =>
                     setFormData({ ...formData, coverImage: e.target.value })
@@ -236,23 +237,126 @@ export const ArticleForm: React.FC<ArticleFormProps> = ({
             </div>
           </TabsContent>
 
-          {showPreview && (
-            <TabsContent value="preview" className="mt-0 lg:block">
-              <div className="lg:sticky lg:top-6">
-                <ArticlePreview
-                  title={formData.title}
-                  content={formData.content}
-                  excerpt={formData.excerpt}
-                  category={formData.category}
-                  tags={formData.tags}
-                  coverImage={formData.coverImage}
-                  author="Admin"
-                />
-              </div>
-            </TabsContent>
-          )}
+          <TabsContent value="preview">
+            <ArticlePreview
+              title={formData.title}
+              content={formData.content}
+              excerpt={formData.excerpt}
+              category={formData.category}
+              tags={formData.tags}
+              coverImage={formData.coverImage}
+              author="Admin"
+            />
+          </TabsContent>
+        </Tabs>
+      </div>
+
+      {/* Desktop view with side-by-side */}
+      <div className="hidden lg:grid lg:grid-cols-2 gap-6">
+        <div className="space-y-4">
+          <div>
+            <Label htmlFor="title-desktop">Titlu *</Label>
+            <Input
+              id="title-desktop"
+              value={formData.title}
+              onChange={(e) =>
+                setFormData({ ...formData, title: e.target.value })
+              }
+              placeholder="Titlul articolului"
+            />
+          </div>
+
+          <div>
+            <Label htmlFor="slug-desktop">Slug</Label>
+            <Input
+              id="slug-desktop"
+              value={formData.slug}
+              onChange={(e) =>
+                setFormData({ ...formData, slug: e.target.value })
+              }
+              placeholder="slug-articol"
+            />
+          </div>
+
+          <div>
+            <Label htmlFor="category-desktop">Categorie *</Label>
+            <Select
+              value={formData.category}
+              onValueChange={(value) =>
+                setFormData({ ...formData, category: value })
+              }
+            >
+              <SelectTrigger>
+                <SelectValue placeholder="Selectează categoria" />
+              </SelectTrigger>
+              <SelectContent>
+                {categories.map((cat) => (
+                  <SelectItem key={cat} value={cat}>
+                    {cat}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div>
+            <Label htmlFor="tags-desktop">Tag-uri</Label>
+            <Input
+              id="tags-desktop"
+              value={formData.tags}
+              onChange={(e) =>
+                setFormData({ ...formData, tags: e.target.value })
+              }
+              placeholder="drept civil, contract, lege"
+            />
+          </div>
+
+          <div>
+            <Label htmlFor="excerpt-desktop">Extras</Label>
+            <Textarea
+              id="excerpt-desktop"
+              value={formData.excerpt}
+              onChange={(e) =>
+                setFormData({ ...formData, excerpt: e.target.value })
+              }
+              rows={3}
+            />
+          </div>
+
+          <div>
+            <Label htmlFor="coverImage-desktop">Imagine copertă (URL)</Label>
+            <Input
+              id="coverImage-desktop"
+              value={formData.coverImage}
+              onChange={(e) =>
+                setFormData({ ...formData, coverImage: e.target.value })
+              }
+            />
+          </div>
+
+          <div>
+            <Label>Conținut *</Label>
+            <RichTextEditor
+              content={formData.content}
+              onChange={(content) =>
+                setFormData({ ...formData, content })
+              }
+            />
+          </div>
         </div>
-      </Tabs>
+
+        <div className="sticky top-6 h-fit">
+          <ArticlePreview
+            title={formData.title}
+            content={formData.content}
+            excerpt={formData.excerpt}
+            category={formData.category}
+            tags={formData.tags}
+            coverImage={formData.coverImage}
+            author="Admin"
+          />
+        </div>
+      </div>
 
       <div className="flex gap-3 justify-end border-t pt-4">
         <Button variant="outline" onClick={() => navigate("/admin/articles")}>
