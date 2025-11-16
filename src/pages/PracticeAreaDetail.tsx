@@ -21,6 +21,8 @@ import {
   HelpCircle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/HeroSection";
+import officeHeroImage from "@/assets/office-1.jpeg";
 
 interface PracticeAreaSection {
   icon: any;
@@ -299,7 +301,7 @@ const practiceAreas: Record<string, PracticeAreaData> = {
 export default function PracticeAreaDetail() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   // Mapping URL slug -> cheia internă
   const slugs: Record<string, string> = {
@@ -350,17 +352,14 @@ export default function PracticeAreaDetail() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-gray-900 text-white">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070')] bg-cover bg-center opacity-30"></div>
-        <div className="relative container mx-auto px-4 py-20 md:py-32">
-          <p className="text-sm uppercase tracking-wider mb-4 opacity-90">
-            / {t("DOMENII DE PRACTICĂ", "PRACTICE AREAS")}
-          </p>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light">
-            {t(practiceArea.title, practiceArea.titleEn)}
-          </h1>
-        </div>
-      </section>
+      <HeroSection
+        backgroundImage={officeHeroImage}
+        category={t("DOMENII DE PRACTICĂ", "PRACTICE AREAS")}
+        categoryEn="PRACTICE AREAS"
+        title={t(practiceArea.title, practiceArea.titleEn)}
+        titleEn={practiceArea.titleEn}
+        language={language}
+      />
 
       {/* Content Section */}
       <section className="py-16 md:py-20">

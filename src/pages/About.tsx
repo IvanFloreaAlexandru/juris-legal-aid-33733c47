@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useNavigate } from "react-router-dom";
+import HeroSection from "@/components/HeroSection";
 import {
   Target,
   Heart,
@@ -22,7 +23,7 @@ import officeImage3 from "@/assets/office-4.jpg";
 import logo from "@/assets/logo.png";
 
 export default function About() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
 
@@ -50,32 +51,20 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-white animate-fade-in">
-      {/* Hero Slider Section */}
-      <section className="relative bg-white">
-        <div className="relative min-h-[30vh] md:min-h-[40vh] lg:min-h-[30vh] overflow-hidden">
-          <div className="absolute inset-0">
-            <img
-              src={officeImage3}
-              alt="Professional Office"
-              className="w-full h-full object-cover brightness-75"
-            />
-          </div>
-
-          <div className="absolute inset-0 h-full grid place-items-center">
-            <div className="text-center text-white px-4">
-              <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-light mb-4">
-                {t("Suport și asistență", "Support and Assistance")}
-              </h1>
-              <p className="text-sm md:text-base font-light opacity-90">
-                {t(
-                  "promptitudine, seriozitate și inovație",
-                  "promptness, seriousness and innovation"
-                )}
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <HeroSection
+        backgroundImage={officeImage3}
+        category={t("DESPRE NOI", "ABOUT US")}
+        categoryEn="ABOUT US"
+        title={t("Suport și asistență", "Support and Assistance")}
+        titleEn="Support and Assistance"
+        subtitle={t(
+          "promptitudine, seriozitate și inovație",
+          "promptness, seriousness and innovation"
+        )}
+        subtitleEn="promptness, seriousness and innovation"
+        language={language}
+      />
 
       {/* Three Column Section */}
       <section className="py-5 md:py-10 bg-white">

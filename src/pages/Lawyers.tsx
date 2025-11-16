@@ -3,9 +3,11 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Skeleton } from '@/components/ui/skeleton';
+import HeroSection from '@/components/HeroSection';
+import officeImage from '@/assets/office-4.jpg';
 
 export default function Lawyers() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -72,20 +74,20 @@ export default function Lawyers() {
 
   return (
     <div className="min-h-screen pt-20 animate-fade-in">
-      {/* Header */}
-      <section className="bg-secondary py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-serif text-5xl font-bold mb-4">
-            {t('Avocații noștri', 'Our Lawyers')}
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {t(
-              'Echipă de profesioniști cu experiență vastă în domeniul juridic',
-              'Team of professionals with vast experience in the legal field'
-            )}
-          </p>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <HeroSection
+        backgroundImage={officeImage}
+        category={t("ECHIPA NOASTRĂ", "OUR TEAM")}
+        categoryEn="OUR TEAM"
+        title={t('Avocații noștri', 'Our Lawyers')}
+        titleEn='Our Lawyers'
+        subtitle={t(
+          'Echipă de profesioniști cu experiență vastă în domeniul juridic',
+          'Team of professionals with vast experience in the legal field'
+        )}
+        subtitleEn='Team of professionals with vast experience in the legal field'
+        language={language}
+      />
 
       {/* Lawyers Grid */}
       <section className="py-20">
