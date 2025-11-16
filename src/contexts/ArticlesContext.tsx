@@ -60,6 +60,169 @@ const mockArticles: Article[] = [
     publishedAt: "2024-01-15T10:00:00Z",
   },
   {
+    id: "11",
+    title: "Noul Cod Civil - Modificări esențiale în 2024",
+    slug: "noul-cod-civil-modificari-esentiale-2024",
+    content:
+      "<h2>Introducere</h2><p>Codul Civil a suferit modificări importante care afectează relațiile contractuale...</p>",
+    excerpt:
+      "Modificările aduse Codului Civil în 2024 aduc schimbări importante în dreptul contractelor.",
+    category: "Noutăți Legislative",
+    tags: ["cod civil", "contracte", "legislație"],
+    status: "published",
+    author: "Admin",
+    coverImage:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    createdAt: "2024-01-15T10:00:00Z",
+    updatedAt: "2024-01-15T10:00:00Z",
+    publishedAt: "2024-01-15T10:00:00Z",
+  },
+  {
+    id: "10",
+    title: "Noul Cod Civil - Modificări esențiale în 2024",
+    slug: "noul-cod-civil-modificari-esentiale-2024",
+    content:
+      "<h2>Introducere</h2><p>Codul Civil a suferit modificări importante care afectează relațiile contractuale...</p>",
+    excerpt:
+      "Modificările aduse Codului Civil în 2024 aduc schimbări importante în dreptul contractelor.",
+    category: "Noutăți Legislative",
+    tags: ["cod civil", "contracte", "legislație"],
+    status: "published",
+    author: "Admin",
+    coverImage:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    createdAt: "2024-01-15T10:00:00Z",
+    updatedAt: "2024-01-15T10:00:00Z",
+    publishedAt: "2024-01-15T10:00:00Z",
+  },
+  {
+    id: "9",
+    title: "Noul Cod Civil2 - Modificări esențiale în 2024",
+    slug: "noul-cod-civil-modificari-esentiale-2024",
+    content:
+      "<h2>Introducere</h2><p>Codul Civil a suferit modificări importante care afectează relațiile contractuale...</p>",
+    excerpt:
+      "Modificările aduse Codului Civil în 2024 aduc schimbări importante în dreptul contractelor.",
+    category: "Noutăți Legislative",
+    tags: ["cod civil", "contracte", "legislație"],
+    status: "published",
+    author: "Admin",
+    coverImage:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    createdAt: "2024-01-15T10:00:00Z",
+    updatedAt: "2024-01-15T10:00:00Z",
+    publishedAt: "2024-01-15T10:00:00Z",
+  },
+  {
+    id: "8",
+    title: "Noul Cod Civil - Modificări esențiale în 2024",
+    slug: "noul-cod-civil-modificari-esentiale-2024",
+    content:
+      "<h2>Introducere</h2><p>Codul Civil a suferit modificări importante care afectează relațiile contractuale...</p>",
+    excerpt:
+      "Modificările aduse Codului Civil în 2024 aduc schimbări importante în dreptul contractelor.",
+    category: "Noutăți Legislative",
+    tags: ["cod civil", "contracte", "legislație"],
+    status: "published",
+    author: "Admin",
+    coverImage:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    createdAt: "2024-01-15T10:00:00Z",
+    updatedAt: "2024-01-15T10:00:00Z",
+    publishedAt: "2024-01-15T10:00:00Z",
+  },
+  {
+    id: "7",
+    title: "Noul Cod Civil - Modificări esențiale în 2024",
+    slug: "noul-cod-civil-modificari-esentiale-2024",
+    content:
+      "<h2>Introducere</h2><p>Codul Civil a suferit modificări importante care afectează relațiile contractuale...</p>",
+    excerpt:
+      "Modificările aduse Codului Civil în 2024 aduc schimbări importante în dreptul contractelor.",
+    category: "Noutăți Legislative",
+    tags: ["cod civil", "contracte", "legislație"],
+    status: "published",
+    author: "Admin",
+    coverImage:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    createdAt: "2024-01-15T10:00:00Z",
+    updatedAt: "2024-01-15T10:00:00Z",
+    publishedAt: "2024-01-15T10:00:00Z",
+  },
+  {
+    id: "6",
+    title: "Noul Cod Civil - Modificări esențiale în 2024",
+    slug: "noul-cod-civil-modificari-esentiale-2024",
+    content:
+      "<h2>Introducere</h2><p>Codul Civil a suferit modificări importante care afectează relațiile contractuale...</p>",
+    excerpt:
+      "Modificările aduse Codului Civil în 2024 aduc schimbări importante în dreptul contractelor.",
+    category: "Noutăți Legislative",
+    tags: ["cod civil", "contracte", "legislație"],
+    status: "published",
+    author: "Admin",
+    coverImage:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    createdAt: "2024-01-15T10:00:00Z",
+    updatedAt: "2024-01-15T10:00:00Z",
+    publishedAt: "2024-01-15T10:00:00Z",
+  },
+  {
+    id: "5",
+    title: "Noul Cod Civil - Modificări esențiale în 2024",
+    slug: "noul-cod-civil-modificari-esentiale-2024",
+    content:
+      "<h2>Introducere</h2><p>Codul Civil a suferit modificări importante care afectează relațiile contractuale...</p>",
+    excerpt:
+      "Modificările aduse Codului Civil în 2024 aduc schimbări importante în dreptul contractelor.",
+    category: "Noutăți Legislative",
+    tags: ["cod civil", "contracte", "legislație"],
+    status: "published",
+    author: "Admin",
+    coverImage:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    createdAt: "2024-01-15T10:00:00Z",
+    updatedAt: "2024-01-15T10:00:00Z",
+    publishedAt: "2024-01-15T10:00:00Z",
+  },
+  {
+    id: "4",
+    title: "Noul Cod Civil - Modificări esențiale în 2024",
+    slug: "noul-cod-civil-modificari-esentiale-2024",
+    content:
+      "<h2>Introducere</h2><p>Codul Civil a suferit modificări importante care afectează relațiile contractuale...</p>",
+    excerpt:
+      "Modificările aduse Codului Civil în 2024 aduc schimbări importante în dreptul contractelor.",
+    category: "Noutăți Legislative",
+    tags: ["cod civil", "contracte", "legislație"],
+    status: "published",
+    author: "Admin",
+    coverImage:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    createdAt: "2024-01-15T10:00:00Z",
+    updatedAt: "2024-01-15T10:00:00Z",
+    publishedAt: "2024-01-15T10:00:00Z",
+  },
+  {
+    id: "3",
+    title: "Noul Cod Civil - Modificări esențiale în 2024",
+    slug: "noul-cod-civil-modificari-esentiale-2024",
+    content:
+      "<h2>Introducere</h2><p>Codul Civil a suferit modificări importante care afectează relațiile contractuale...</p>",
+    excerpt:
+      "Modificările aduse Codului Civil în 2024 aduc schimbări importante în dreptul contractelor.",
+    category: "Noutăți Legislative",
+    tags: ["cod civil", "contracte", "legislație"],
+    status: "published",
+    author: "Admin",
+    coverImage:
+      "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800",
+    createdAt: "2024-01-15T10:00:00Z",
+    updatedAt: "2024-01-15T10:00:00Z",
+    publishedAt: "2024-01-15T10:00:00Z",
+  },
+
+  {
     id: "2",
     title: "Jurisprudență CJUE: Hotărâri recente în materie civilă",
     slug: "jurisprudenta-cjue-hotarari-recente-materie-civila",
@@ -76,7 +239,7 @@ const mockArticles: Article[] = [
     publishedAt: "2024-02-01T14:30:00Z",
   },
   {
-    id: "3",
+    id: "12",
     title: "Draft: Ghid practic pentru procedura succesorală",
     slug: "ghid-practic-procedura-succesorala",
     content:
@@ -107,7 +270,7 @@ export const ArticlesProvider: React.FC<{ children: React.ReactNode }> = ({
   }) => {
     setLoading(true);
     await new Promise((resolve) => setTimeout(resolve, 300));
-    
+
     let filtered = [...allArticles];
 
     if (filters?.category && filters.category !== "all") {
@@ -153,29 +316,33 @@ export const ArticlesProvider: React.FC<{ children: React.ReactNode }> = ({
 
       // Call backend API
       const response = await createArticleAPI(articleData);
-      
+
       // Create article object for local state
       const newArticle: Article = {
         ...article,
         id: Date.now().toString(),
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
-        publishedAt: article.status === "published" ? new Date().toISOString() : undefined,
+        publishedAt:
+          article.status === "published" ? new Date().toISOString() : undefined,
       };
 
       setAllArticles((prev) => [newArticle, ...prev]);
       setArticles((prev) => [newArticle, ...prev]);
-      
+
       toast({
         title: "Succes",
         description: `Articolul a fost creat și publicat pe server: ${response.url}`,
       });
-      
+
       return newArticle;
     } catch (error) {
       toast({
         title: "Eroare",
-        description: error instanceof Error ? error.message : "Nu s-a putut crea articolul",
+        description:
+          error instanceof Error
+            ? error.message
+            : "Nu s-a putut crea articolul",
         variant: "destructive",
       });
       throw error;
