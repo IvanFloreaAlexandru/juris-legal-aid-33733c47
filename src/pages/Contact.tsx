@@ -44,7 +44,7 @@ export default function Contact() {
   }
 
   return (
-    <div className="min-h-screen pt-20 animate-fade-in">
+    <div className="min-h-screen text-left animate-fade-in">
       {/* Hero Section */}
       <HeroSection
         backgroundImage={officeImage}

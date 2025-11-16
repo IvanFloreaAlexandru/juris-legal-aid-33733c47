@@ -65,80 +65,30 @@ export default function About() {
         subtitleEn="promptness, seriousness and innovation"
         language={language}
       />
-
-      {/* Three Column Section */}
-      <section className="py-5 md:py-10 bg-white">
-        <div className="container mx-auto px-4 max-w-12xL">
-          <div className="grid md:grid-cols-3 gap-20 max-w-12xl mx-auto items-stretch">
-            <div className="flex flex-col">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0">
-                  <Info className="h-7 w-7 text-white" />
-                </div>
-                <h2 className="font-serif text-2xl font-normal">
-                  {t("Despre noi", "About Us")}
-                </h2>
-              </div>
-              <p className="text-gray-600 leading-relaxed mb-4 flex-grow">
+      {/* Straight Talk Section */}
+      <section className="py-16 md:py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="max-w-xl">
+              <h2 className="font-serif text-3xl md:text-4xl font-normal mb-6 leading-tight">
                 {t(
-                  "Autorizat ca și agent al operatorului Uniunea Națională a Barourilor din România (UNBR), „istoria și experiența biroului nostru în domeniul Registrul Național de Publicitate Mobiliara...",
-                  "Authorized as an agent of the National Union of Bar Associations of Romania (UNBR), the 'history' and experience of our office in the field of the National Register of Movable Publicity..."
+                  "Discuțiile directe sunt discuții bune de afaceri",
+                  "Straight Talk Is Good Business Talk"
+                )}
+              </h2>
+              <p className="text-gray-600 leading-relaxed">
+                {t(
+                  "Suntem atenți la rezultate și la relațiile pe care le construim cu clienții noștri. Oferim consiliere juridică de calitate la un preț accesibil. Echipa noastră este dedicată să vă ajute să vă atingeți obiectivele de afaceri prin servicii juridice complete și personalizate.",
+                  "We are attentive to results and the relationships we build with our clients. We offer quality legal advice at an affordable price. Our team is dedicated to helping you achieve your business goals through comprehensive and personalized legal services."
                 )}
               </p>
-              <a
-                href="#"
-                className="inline-flex items-center text-red-600 font-medium hover:text-red-700"
-              >
-                {t("Detalii", "Details")} <span className="ml-1">›</span>
-              </a>
             </div>
-
-            {/* Despre RNPM */}
-            <div className="flex flex-col">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0">
-                  <BookOpen className="h-7 w-7 text-white" />
-                </div>
-                <h2 className="font-serif text-2xl font-normal">
-                  {t("Despre RNPM", "About RNPM")}
-                </h2>
-              </div>
-              <p className="text-gray-600 leading-relaxed mb-4 flex-grow">
-                {t(
-                  "Registrul Național de Publicitate Mobiliara (Registru) reprezintă un sistem de evidență a priorității ipotecilor mobilare și de publicitate, unic la nivel național, structurat pe persoane și bunuri...",
-                  "National Register of Movable Publicity (Registry) represents a system of recording the priority of movable mortgages and publicity, unique at national level, structured by persons and goods..."
-                )}
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center text-red-600 font-medium hover:text-red-700"
-              >
-                {t("Detalii", "Details")} <span className="ml-1">›</span>
-              </a>
-            </div>
-
-            {/* Utile */}
-            <div className="flex flex-col">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-full bg-red-600 flex items-center justify-center flex-shrink-0">
-                  <Briefcase className="h-7 w-7 text-white" />
-                </div>
-                <h2 className="font-serif text-2xl font-normal">
-                  {t("Utile", "Useful")}
-                </h2>
-              </div>
-              <p className="text-gray-600 leading-relaxed mb-4 flex-grow">
-                {t(
-                  "Vă rugăm să rețineți că informațiile din Registru sunt informații publice, accesibile oricărei persoane, indiferent de calitatea acestora (parte în contractul de ipotecă sau terț)...",
-                  "Please note that the information in the Registry is public information, accessible to any person, regardless of their capacity (party to the mortgage contract or third party)..."
-                )}
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center text-red-600 font-medium hover:text-red-700"
-              >
-                {t("Detalii", "Details")} <span className="ml-1">›</span>
-              </a>
+            <div className="relative h-[400px] lg:h-[500px]">
+              <img
+                src={logo}
+                alt="Professional consultation"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -225,35 +175,6 @@ export default function About() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Straight Talk Section */}
-      <section className="py-16 md:py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-            <div className="max-w-xl">
-              <h2 className="font-serif text-3xl md:text-4xl font-normal mb-6 leading-tight">
-                {t(
-                  "Discuțiile directe sunt discuții bune de afaceri",
-                  "Straight Talk Is Good Business Talk"
-                )}
-              </h2>
-              <p className="text-gray-600 leading-relaxed">
-                {t(
-                  "Suntem atenți la rezultate și la relațiile pe care le construim cu clienții noștri. Oferim consiliere juridică de calitate la un preț accesibil. Echipa noastră este dedicată să vă ajute să vă atingeți obiectivele de afaceri prin servicii juridice complete și personalizate.",
-                  "We are attentive to results and the relationships we build with our clients. We offer quality legal advice at an affordable price. Our team is dedicated to helping you achieve your business goals through comprehensive and personalized legal services."
-                )}
-              </p>
-            </div>
-            <div className="relative h-[400px] lg:h-[500px]">
-              <img
-                src={logo}
-                alt="Professional consultation"
-                className="w-full h-full object-cover"
-              />
-            </div>
           </div>
         </div>
       </section>

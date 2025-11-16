@@ -141,7 +141,7 @@ export default function DomeniiDePractica() {
   }
 
   return (
-    <div className="min-h-screen pt-20 animate-fade-in">
+    <div className="min-h-screen animate-fade-in text-left">
       {/* Hero Section */}
       <HeroSection
         backgroundImage={officeImage3}
