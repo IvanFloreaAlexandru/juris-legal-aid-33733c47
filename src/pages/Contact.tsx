@@ -6,9 +6,11 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
+import HeroSection from "@/components/HeroSection";
+import officeImage from "@/assets/office-2.jpeg";
 
 export default function Contact() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -43,20 +45,20 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen pt-20 animate-fade-in">
-      {/* Header */}
-      <section className="bg-secondary py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-serif text-5xl font-bold mb-4">
-            {t("Contact", "Contact")}
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {t(
-              "Suntem aici să vă ajutăm. Contactați-ne pentru o consultație",
-              "We are here to help. Contact us for a consultation"
-            )}
-          </p>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <HeroSection
+        backgroundImage={officeImage}
+        category={t("CONTACTAȚI-NE", "CONTACT US")}
+        categoryEn="CONTACT US"
+        title={t("Contact", "Contact")}
+        titleEn="Contact"
+        subtitle={t(
+          "Suntem aici să vă ajutăm. Contactați-ne pentru o consultație",
+          "We are here to help. Contact us for a consultation"
+        )}
+        subtitleEn="We are here to help. Contact us for a consultation"
+        language={language}
+      />
 
       {/* Contact Content */}
       <section className="py-20">

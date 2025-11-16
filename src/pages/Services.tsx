@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Scale, Home, Building } from "lucide-react";
+import HeroSection from "@/components/HeroSection";
 import {
   Card,
   CardContent,
@@ -141,28 +142,20 @@ export default function DomeniiDePractica() {
 
   return (
     <div className="min-h-screen pt-20 animate-fade-in">
-      {/* Header */}
-      <section className="relative py-16 min-h-[20vh] flex items-center">
-        <div className="absolute inset-0">
-          <img
-            src={officeImage3}
-            alt="Professional Office"
-            className="w-full h-full object-cover brightness-75"
-          />
-        </div>
-
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <h1 className="font-serif text-5xl font-bold mb-4 text-white">
-            {t("Domenii de practică", "Legal Services")}
-          </h1>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            {t(
-              "Oferim asistență juridică complexă în diverse domenii ale dreptului",
-              "We provide comprehensive legal assistance in various areas of law"
-            )}
-          </p>
-        </div>
-      </section>
+      {/* Hero Section */}
+      <HeroSection
+        backgroundImage={officeImage3}
+        category={t("DOMENII DE PRACTICĂ", "LEGAL SERVICES")}
+        categoryEn="LEGAL SERVICES"
+        title={t("Domenii de practică", "Legal Services")}
+        titleEn="Legal Services"
+        subtitle={t(
+          "Oferim asistență juridică complexă în diverse domenii ale dreptului",
+          "We provide comprehensive legal assistance in various areas of law"
+        )}
+        subtitleEn="We provide comprehensive legal assistance in various areas of law"
+        language={language}
+      />
 
       {/* Services */}
       <section className="py-20">
